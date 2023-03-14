@@ -1,0 +1,25 @@
+tr > td {
+    text-align: center;
+    padding: 0 0 0 0;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #018ef3;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+th {
+    background-color: #018ef3;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
