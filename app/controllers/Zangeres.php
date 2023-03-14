@@ -12,7 +12,7 @@ class Zangeres extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Overzicht landen van de wereld'
+            'title' => 'Top 5 rijkste zangeressen ter wereld'
         ];
 
         $this->view('Zangeres/index', $data);
@@ -26,13 +26,16 @@ class Zangeres extends BaseController
         $tableRows = "";
         foreach ($Zangeres as $value) {
             $tableRows .= "<tr>
-                                <td>$value->Id</td>
-                                <td>$value->Name</td>
+                                <td>$value->Naam</td>
+                                <td>$value->NettoWaarde</td>
+                                <td>$value->Land</td>
+                                <td>$value->Mobiel</td>
+                                <td>$value->Leeftijd</td>
                            </tr>";
         }
 
         $data = [
-            'title' => 'Overzicht landen van Europa',
+            'title' => 'Top 5 rijkste zangeressen ter wereld',
             'tableRows' => $tableRows
         ];
 
